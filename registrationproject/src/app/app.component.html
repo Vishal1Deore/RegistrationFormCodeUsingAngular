@@ -1,0 +1,22 @@
+
+<button (click)="display(1)">log in</button>
+<button (click)="display(2)">reserpass</button>
+<button (click)="display(3)">register</button>
+
+<div *ngIf="whatToShow==1">
+  <app-userlogin></app-userlogin>
+</div>
+
+
+<div *ngIf="whatToShow==2">
+  <app-userpassrreset></app-userpassrreset>
+
+</div>
+
+<div *ngIf="whatToShow==3">
+  <app-userregistraion></app-userregistraion>
+
+</div>
+
+
+
